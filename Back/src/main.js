@@ -4,16 +4,9 @@ const mongoose = require('mongoose');
 const app = express();
 const port = 3000;
 
-mongoose.connect('mongodb://localhost:27017/ BibliotecaDB', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+mongoose.connect('mongodb://localhost:27017/ BibliotecaDB', {});
 
-
-const booksRouter = require('./Routes/booksRoute');
-app.use('/books', booksRouter);
-
-
+app.use(require('./Routes/routes'))
 
 app.get('/', (req, res) => {
     res.send('Hello World!');

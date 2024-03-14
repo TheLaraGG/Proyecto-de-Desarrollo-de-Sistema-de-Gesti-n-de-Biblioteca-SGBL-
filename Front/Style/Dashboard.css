@@ -1,0 +1,23 @@
+
+.libreria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.libro {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    float: right;
+    margin-left: 20px;
+}

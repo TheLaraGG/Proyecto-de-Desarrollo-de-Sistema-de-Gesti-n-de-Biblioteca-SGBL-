@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Préstamos y Devoluciones </title>
+    <link rel="stylesheet" href="../Front/Style/devoluciones.css">
+</head>
+<body>
+   <div class="center">
+    <header>
+        <h1>prestamos y devoluciones</h1>
+    </header>
+
+    <main>
+        <section id="prestamos">
+            <h2>Gestión de Préstamos</h2>
+        
+            <h3>Agregar Nuevo Préstamo</h3>
+            <form id="add-loan-form">
+                <div class="txt_field">
+                    <label for="book-title">Título del Libro:</label>
+                    <div><input type="text" id="book-title" name="book-title" required></div>
+                </div>
+
+                <div class="txt_field">
+                    <label for="borrower">Prestado por:</label>
+                    <div><input type="text" id="borrower" name="borrower" required></div>
+                </div>
+
+                <div >
+                    <label for="due-date">Fecha de Devolución:</label>
+                    <div><input type="date" id="due-date" name="due-date" required></div>
+                </div>
+
+                <input type="submit" value="agregar prestamo">
+           </form>
+        </section>
+
+        <section id="devoluciones">
+            <h2>Gestión de Devoluciones</h2>
+
+            <h3>Registrar Nueva Devolución</h3>
+            <form id="add-return-form">
+                <input type="hidden" id="return-id" name="return-id">
+
+                <div class="txt_field">
+                    <label for="book-title">Título del Libro:</label>
+                    <div><input type="text" id="return-book-title" name="return-book-title" required readonly></div>
+                </div>
+
+                <div class="txt_field">
+                    <label for="borrower">Prestado por:</label>
+                    <div><input type="text" id="return-borrower" name="return-borrower" required readonly></div>
+                </div>
+
+                <div>
+                    <label for="due-date">Fecha de Devolución asignada:</label>
+                    <div><input type="date" id="return-due-date" name="return-due-date" required readonly></div>
+                </div>
+
+                <div>
+                    <label for="actual-return-date">Fecha de Devolución Real:</label>
+                    <div><input type="date" id="return-actual-date" name="return-actual-date" required></div>
+                </div>
+
+                <input type="submit" value="registrar devolucion">
+                </div>
+            </form>
+        
+        </section>
+    </main>
+
+    </div>
+
+    
+</body>
+</html>

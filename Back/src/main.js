@@ -32,7 +32,7 @@ app.post('/login', async(req, res) => {
     
 
 })
-app.use(auth)
+//app.use(auth)
 app.use(require('./Routes/routes'))
 
 app.get('/', (req, res) => {
@@ -44,4 +44,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
-export default app;
